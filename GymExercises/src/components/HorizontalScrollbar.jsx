@@ -1,19 +1,23 @@
 import { Box } from '@mui/material'
 import React from 'react'
+import Bodypart from './Bodypart'
 
-function HorizontalScrollbar({data}) {
+function HorizontalScrollbar({data ,bodyPart, setBodyPart}) {
   return (
     <div>
-        {data.map((item)=>{
+        {
+        data.forEach((item)=>{
             <Box 
             key={item.id || item}
             itemId={item.id || item}
             title={item.id || item}
             >
-                {item}
+                <Bodypart item={item}  bodyPart={bodyPart} setBodyPart={setBodyPart}/>
+                
             </Box>
-        }    
+        }      
         )}
+
     </div>
   )
 }
