@@ -11,8 +11,10 @@ function SearchExercise({ setExercises, setBodyPart, bodyPart }) {
     "all",
     "chest",
     "back",
+    "upper legs",
     "shoulders",
-    "legs",
+    "waist",
+  
   ]);
 
   // useEffect(()=>{
