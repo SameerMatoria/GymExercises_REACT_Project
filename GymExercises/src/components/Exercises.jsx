@@ -24,22 +24,8 @@ const Exercises = ({ exercises, setExercises, bodypart }) => {
       >
         {exercises.map((exercise, idx) => (
           <ExerciseCard key={idx} exercise={exercise} />
-          // <p>{exercise.name}</p>
         ))}
       </Stack>
-      {/* <Stack sx={{ mt: { lg: "114px", xs: "70px" } }} alignItems="center">
-        {exercises.length > 9 && (
-          <Pagination
-            color="standard"
-            shape="rounded"
-            defaultPage={1}
-            count={Math.ceil(exercises.length / exercisesPerPage)}
-            page={currentPage}
-            onChange={paginate}
-            size="large"
-          />
-        )}
-      </Stack> */}
     </Box>
   );
 };
