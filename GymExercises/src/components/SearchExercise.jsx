@@ -55,7 +55,14 @@ function SearchExercise({ setExercises, setBodyPart, bodyPart }) {
       >
         Search for Exercises
       </Typography>
-      <Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center", // Center items horizontally
+          position: "relative", // Required for absolute positioning inside
+          height: "100px", // Adjust height as needed
+        }}
+      >
         <TextField
           sx={{
             input: { fontWeight: 700, border: "none", borderRadius: "40px" },
@@ -80,12 +87,13 @@ function SearchExercise({ setExercises, setBodyPart, bodyPart }) {
             fontSize: "15px",
             padding: "10px",
             position: "absolute",
-            right: "1000",
+            right: 0,
           }}
         >
           Search
         </Button>
       </Box>
+
       <Box
         sx={{
           position: "relative",

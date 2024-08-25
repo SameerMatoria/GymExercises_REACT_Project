@@ -10,10 +10,11 @@ const Exercises = ({ exercises, setExercises, bodypart }) => {
       <Typography
         variant="h4"
         fontWeight="bold"
-        sx={{ fontSize: { lg: "44px", xs: "30px" } }}
+        textAlign='center'
+        sx={{ fontSize: { lg: "38px", xs: "30px" } }}
         mb="46px"
       >
-        Showing Results
+        Search to learn exercises
       </Typography>
       <Stack
         direction="row"
